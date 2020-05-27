@@ -15,6 +15,13 @@ public class QuestCalculator {
         int maxRepTimesForNeededCeil = (int) Math.ceil(qNeeded / maxRepOutput);
         int count = 0;
 
+        if(maxRepOutput >= qNeeded) {
+            result.add(1);
+            result.add(0);
+            result.add(0);
+            return result;
+        }
+
         if(maxRepTimesForNeeded % 1 != 0) {
             for(int i = 0; i < maxRepTimesForNeededCeil-1; i++) {
                 if(maxRepOutput < qNeeded) {
@@ -34,6 +41,7 @@ public class QuestCalculator {
         }
 
         result.add(count);
+        result.add(1);
         result.add(qRepeatQuestLast);
 
         return result;
