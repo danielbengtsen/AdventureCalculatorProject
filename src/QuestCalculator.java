@@ -34,7 +34,6 @@ public class QuestCalculator {
         }
 
         result.add(count);
-        result.add(1);
         result.add(qRepeatQuestLast);
 
         return result;

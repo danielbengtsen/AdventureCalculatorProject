@@ -28,8 +28,7 @@ public class Main {
                     int qRepeatQuest = intScanner();
                     resultArr = QuestCalculator.calcTimesToDoChildQuest(qOutput, qNeeded, qRepeatQuest);
                     System.out.println(printWithFillers("You need to do the child quest", resultArr.get(0),
-                            "time(s) with max stock rep and", resultArr.get(1),
-                            "time(s) with stock rep:", resultArr.get(2)));
+                            "time(s) with max stock rep, and 1 time with stock rep:", resultArr.get(1)));
                     break;
             }
         }
@@ -54,12 +53,10 @@ public class Main {
 
 
 
-    public static String printWithFillers(String beforeResult1, int resultCount1, String afterResult1, int resultCount2, String afterCount2, int resultStock2) {
+    public static String printWithFillers(String beforeResult1, int resultCount1, String afterResult1, int resultStock2) {
         String count1Length = String.valueOf(resultCount1);
-        String count2Length = String.valueOf(resultCount2);
         String stock2Length = String.valueOf((resultStock2));
-        int finalStringLength = beforeResult1.length() + count1Length.length() + afterResult1.length() +
-                count2Length.length() + afterCount2.length() + stock2Length.length();
+        int finalStringLength = beforeResult1.length() + count1Length.length() + afterResult1.length() + stock2Length.length();
         String filler = "";
 
         final int SPACES_IN_RESULT = 5;
@@ -67,8 +64,7 @@ public class Main {
             filler += "*";
         }
 
-        String result = filler + "\n" + beforeResult1 + " " + resultCount1 + " " + afterResult1 + " " + resultCount2 +
-                " " + afterCount2 + " " + resultStock2 + "\n" + filler;
+        String result = filler + "\n" + beforeResult1 + " " + resultCount1 + " " + afterResult1 + " " + resultStock2 + "\n" + filler;
 
         return result;
     }
