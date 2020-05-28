@@ -47,4 +47,23 @@ public class QuestCalculator {
         return result;
     }
 
+
+    // xpGained = the xp gained from completing the action.
+    // xpLevelUp = the xp needed to level up.
+    // haxXpBoost = true: xp boost is on, false: xp boost is not off.
+    public static int calcActionTimesToLevelUp(int xpGained, int xpLevelUp, boolean hasXPBoost) {
+        double tmpResult;
+        int result;
+
+        if(hasXPBoost) {
+            xpGained *= 2;
+        }
+
+        tmpResult = xpLevelUp / (double)xpGained;
+
+        result = (int) Math.ceil(tmpResult);
+
+        return result;
+    }
+
 }
