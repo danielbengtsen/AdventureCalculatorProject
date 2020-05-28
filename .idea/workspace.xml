@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1f82b56-d595-492b-bd04-cafdde1d4095" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/QuestCalculatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Questulator project/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Questulator project/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Questulator project/MainMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Questulator project/MainMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Questulator project/QuestCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Questulator project/QuestCalculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QuestCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/QuestCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Questulator project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Questulator project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Questulator project/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Questulator project/MainMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Questulator project/QuestCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QuestCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/QuestCalculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +27,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -38,18 +42,48 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
       <module name="Questulator project" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuestCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Questulator project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.QuestCalculatorTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -57,6 +91,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.QuestCalculatorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -73,7 +108,7 @@
       <workItem from="1590559259794" duration="1149000" />
       <workItem from="1590561035980" duration="41000" />
       <workItem from="1590607006603" duration="1262000" />
-      <workItem from="1590638442013" duration="885000" />
+      <workItem from="1590638442013" duration="2514000" />
     </task>
     <servers />
   </component>
@@ -81,6 +116,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="371" y="80" key="#All_in_Questulator_project" timestamp="1590640089079">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="371" y="80" key="#All_in_Questulator_project/0.0.1536.824@0.0.1536.824" timestamp="1590640089079" />
     <state x="361" y="74" key="#Project_Structure" timestamp="1590559265813">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -89,21 +128,29 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="71" key="#com.intellij.unscramble.UnscrambleDialog/0.0.1536.824@0.0.1536.824" timestamp="1590608138590" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1590639290863">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1590640933150">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590639290863" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1590639290863">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590640933150" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1590640933150">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590639290863" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1590639290863">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590640933150" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1590640933150">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590639290863" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1590639290863">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590640933150" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1590640933150">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590639290863" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590640933150" />
+    <state x="498" y="314" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1590639550539">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="314" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1590639550539" />
+    <state x="540" y="132" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1590639526221">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="540" y="132" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1590639526221" />
   </component>
 </project>

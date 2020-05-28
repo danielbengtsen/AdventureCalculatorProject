@@ -1,3 +1,5 @@
+package main;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -69,8 +71,10 @@ public class Main {
         String count1Length = String.valueOf(resultCount1);
         String count2Length = String.valueOf(resultCount2);
         String stock2Length = String.valueOf((resultStock2));
+
         int allStringsLength = beforeResult1.length() + count1Length.length() + afterResult1.length() +
                 count2Length.length() + afterCount2.length() + stock2Length.length();
+
         String filler = "";
 
         for(int i = 0; i < allStringsLength; i++) {
