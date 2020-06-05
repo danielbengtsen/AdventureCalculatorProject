@@ -25,7 +25,7 @@ public class Main {
                     int qNeeded = intScanner();
                     System.out.println("Type child quest output for max stock pr. child quest item:");
                     int qRepeatQuest = intScanner();
-                    resultArr = QuestCalculator.calcTimesToDoChildQuest(qOutput, qNeeded, qRepeatQuest);
+                    resultArr = MagicCalculator.calcTimesToDoChildQuest(qOutput, qNeeded, qRepeatQuest);
                     System.out.println(printWithFillersChildQuest("You need to do the child quest ", resultArr.get(0),
                             " time(s) with max stock rep, and ", resultArr.get(1),
                             " time(s) with stock rep: ", resultArr.get(2)));
@@ -37,7 +37,7 @@ public class Main {
                     int needed = intScanner();
                     System.out.println("Is boost on or off? [1 = ON, 0 = OFF]");
                     boolean hasBoost = intToBoolean(intScanner());
-                    result = QuestCalculator.calcActionTimesToAchieveSomething(gained, needed, hasBoost);
+                    result = MagicCalculator.calcActionTimesToAchieveSomething(gained, needed, hasBoost);
                     System.out.println(printWithFillersAchieveSomething("You need to do the action ", result,
                             " time(s)", " [Boost is turned ", hasBoost, "]"));
                     break;

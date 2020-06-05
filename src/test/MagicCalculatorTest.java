@@ -1,12 +1,12 @@
 package test;
 
-import main.QuestCalculator;
+import main.MagicCalculator;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import static org.junit.jupiter.api.Assertions.*;
 
-class QuestCalculatorTest {
+class MagicCalculatorTest {
 
     @Test
     public void calcTimesToDoChildQuestTest() {
@@ -19,7 +19,7 @@ class QuestCalculatorTest {
         expected.add(1);
         expected.add(4);
 
-        ArrayList<Integer> result = QuestCalculator.calcTimesToDoChildQuest(qOutput, qNeeded, qRepeatQuest);
+        ArrayList<Integer> result = MagicCalculator.calcTimesToDoChildQuest(qOutput, qNeeded, qRepeatQuest);
 
         assertEquals(expected.get(0), result.get(0));
         assertEquals(expected.get(1), result.get(1));
@@ -38,7 +38,7 @@ class QuestCalculatorTest {
         expected.add(0);
         expected.add(0);
 
-        ArrayList<Integer> result = QuestCalculator.calcTimesToDoChildQuest(qOutput, qNeeded, qRepeatQuest);
+        ArrayList<Integer> result = MagicCalculator.calcTimesToDoChildQuest(qOutput, qNeeded, qRepeatQuest);
 
         assertEquals(expected.get(0), result.get(0));
         assertEquals(expected.get(1), result.get(1));
@@ -54,14 +54,14 @@ class QuestCalculatorTest {
 
         // test without boost
         int expected = 166;
-        int result = QuestCalculator.calcActionTimesToAchieveSomething(gained, needed, hasBoost);
+        int result = MagicCalculator.calcActionTimesToAchieveSomething(gained, needed, hasBoost);
 
         assertEquals(expected, result);
 
         // test with boost
         hasBoost = true;
         expected = 83;
-        result = QuestCalculator.calcActionTimesToAchieveSomething(gained, needed, hasBoost);
+        result = MagicCalculator.calcActionTimesToAchieveSomething(gained, needed, hasBoost);
 
         assertEquals(expected, result);
 

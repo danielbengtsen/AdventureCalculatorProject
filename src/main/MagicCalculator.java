@@ -2,7 +2,7 @@ package main;
 
 import java.util.ArrayList;
 
-public class QuestCalculator {
+public class MagicCalculator {
 
     // qOutput = The amount of the item you get from completing the child quest.
     // qNeeded = The amount of the item needed to complete the parent quest.
