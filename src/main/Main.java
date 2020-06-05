@@ -31,15 +31,15 @@ public class Main {
                             " time(s) with stock rep: ", resultArr.get(2)));
                     break;
                 case 2:
-                    System.out.println("Type the amount of XP gained from doing the action:");
-                    int xpGained = intScanner();
-                    System.out.println("Type the amount of XP needed to level up:");
-                    int xpLevelUp = intScanner();
-                    System.out.println("Is XP boost on or off? [1 = ON, 0 = OFF]");
-                    boolean hasXPBoost = intToBoolean(intScanner());
-                    result = QuestCalculator.calcActionTimesToLevelUp(xpGained, xpLevelUp, hasXPBoost);
-                    System.out.println(printWithFillersLevelUp("You need to do the action ", result,
-                            " time(s)", " [XP boost is turned ", hasXPBoost, "]"));
+                    System.out.println("Type the amount of something gained from doing the action:");
+                    int gained = intScanner();
+                    System.out.println("Type the amount of something needed to achieve it:");
+                    int needed = intScanner();
+                    System.out.println("Is boost on or off? [1 = ON, 0 = OFF]");
+                    boolean hasBoost = intToBoolean(intScanner());
+                    result = QuestCalculator.calcActionTimesToAchieveSomething(gained, needed, hasBoost);
+                    System.out.println(printWithFillersAchieveSomething("You need to do the action ", result,
+                            " time(s)", " [Boost is turned ", hasBoost, "]"));
                     break;
             }
         }
@@ -88,18 +88,18 @@ public class Main {
     }
 
 
-    public static String printWithFillersLevelUp(String beforeResult, int resultTimes, String afterResult, String beforeBoolean, boolean hasXPBoost, String afterBoolean) {
+    public static String printWithFillersAchieveSomething(String beforeResult, int resultTimes, String afterResult, String beforeBoolean, boolean hasBoost, String afterBoolean) {
         String resultTimesLength = String.valueOf(resultTimes);
-        String xpBoost;
+        String boost;
 
-        if(hasXPBoost) {
-            xpBoost = "ON";
+        if(hasBoost) {
+            boost = "ON";
         } else {
-            xpBoost = "OFF";
+            boost = "OFF";
         }
 
         int allStringsLength = beforeResult.length() + resultTimesLength.length() + afterResult.length() +
-                beforeBoolean.length() + xpBoost.length() + afterBoolean.length();
+                beforeBoolean.length() + boost.length() + afterBoolean.length();
         String filler = "";
 
 
@@ -107,7 +107,7 @@ public class Main {
             filler += "*";
         }
 
-        String result = filler + "\n" + beforeResult + resultTimes + afterResult + beforeBoolean + xpBoost +
+        String result = filler + "\n" + beforeResult + resultTimes + afterResult + beforeBoolean + boost +
                 afterBoolean + "\n" + filler;
 
         return result;

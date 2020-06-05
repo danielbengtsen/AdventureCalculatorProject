@@ -47,21 +47,21 @@ class QuestCalculatorTest {
 
 
     @Test
-    public void calcActionTimesToLevelUpTest() {
-        int xpGained = 587;
-        int xpLevelUp = 97234;
-        boolean hasXPBoost = false;
+    public void calcActionTimesToAchieveSomethingTest() {
+        int gained = 587;
+        int needed = 97234;
+        boolean hasBoost = false;
 
-        // test without xp boost
+        // test without boost
         int expected = 166;
-        int result = QuestCalculator.calcActionTimesToLevelUp(xpGained, xpLevelUp, hasXPBoost);
+        int result = QuestCalculator.calcActionTimesToAchieveSomething(gained, needed, hasBoost);
 
         assertEquals(expected, result);
 
-        // test with xp boost
-        hasXPBoost = true;
+        // test with boost
+        hasBoost = true;
         expected = 83;
-        result = QuestCalculator.calcActionTimesToLevelUp(xpGained, xpLevelUp, hasXPBoost);
+        result = QuestCalculator.calcActionTimesToAchieveSomething(gained, needed, hasBoost);
 
         assertEquals(expected, result);
 
